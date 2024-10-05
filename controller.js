@@ -32,6 +32,7 @@ function start() {
     view.drawGrid(grid);
   });
 
+  // FIXME: There's a problem, when you remove all cells and then add some cells, all the cells added just die instantly
   document.getElementById("start-game").addEventListener("submit", (event) => {
     event.preventDefault();  
     tick();

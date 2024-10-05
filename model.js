@@ -37,22 +37,6 @@ function updateCells(grid, nextGrid) {
         for (let j = 0; j < grid.cols(); j++) {
             let liveNeighbours = getLiveNeighbours(i, j, grid);
 
-            // ChatGPT
-            /* if (grid.get(i,j) === 1) { // If the cell is alive
-                if (liveNeighbours < 2 || liveNeighbours > 3) {
-                    nextGrid.set(i, j, 0); // Die
-                } else {
-                    nextGrid.set(i, j, 1); // Stay alive
-                }
-            } else { // If the cell is dead
-                if (liveNeighbours === 3) {
-                    nextGrid.set(i, j, 1); // Become alive
-                } else {
-                    nextGrid.set(i, j, 0); // Stay dead
-                }
-            } */
-
-            // MY solution:
             if (liveNeighbours < 2 || liveNeighbours > 3) {
                 nextGrid.set(i, j, 0);
             } else if (liveNeighbours === 2  || liveNeighbours === 3){
