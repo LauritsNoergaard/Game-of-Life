@@ -1,0 +1,26 @@
+body {
+    background-color: darkcyan;
+}
+
+.grid-container {
+    display: grid;
+
+}
+
+.cell-dead {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.cell-alive {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+#generations {
+    padding: 20px;
+}
